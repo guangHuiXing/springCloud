@@ -1,6 +1,8 @@
 server:
   port: 8761
 eureka:
+  server:
+    enable-self-preservation: false
   instance:
     hostname: localhost
   client:
@@ -11,3 +13,7 @@ eureka:
 spring:
   application:
     name: eureka-server
+  security:
+    user:
+      name: xgh
+      password: 123
